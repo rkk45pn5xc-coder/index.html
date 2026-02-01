@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+</head>
+<body style="background:#f9c5d1; display:flex; justify-content:center; align-items:center; height:100vh; font-family:Arial;">
+  <div style="background:#fff; padding:40px; border-radius:20px; text-align:center; position:relative;">
+    <h2 id="q">kuchi kuuu, will you be my Valentine? 🥰</h2>
+    <button onclick="yes()" style="padding:10px 25px; border-radius:20px; background:#ff4d6d; color:white; border:none;">Yes</button>
+    <button onmouseover="run(this)" style="padding:10px 25px; border-radius:20px; border:none; position:absolute;">No</button>
+  </div>
+
+<script>
+function run(btn){
+  btn.style.left = Math.random()*250 + 'px';
+  btn.style.top = Math.random()*150 + 'px';
+}
+function yes(){
+  document.getElementById("q").innerText="let’s gooo bebe 😘🔥";
+}
+</script>
+</body>
+</html>
